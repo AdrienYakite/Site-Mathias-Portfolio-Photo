@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+    <html lang="fr">
+        <head> 
+            <meta charset=utf-8>
+            <title id="ancre-accueil">Accueil – Mathias Jaume - Photographie</title>
+            <link rel="stylesheet" href="style.css"/> 
+
+            <!--Importation polices-->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&display=swap" rel="stylesheet">
+
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Raleway:wght@100&display=swap" rel="stylesheet">
+
+            <!--Résolution-->
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <script src="files.js" defer></script>
+            
+        </head>
+        
+        <body>
+            <header>
+                <nav>
+                        <a href="index.html">
+                            <img src="images/logo-mathias-V3 (1).png" alt="logo_mathias_jaume">
+                        </a>
+
+                    <span>
+                        <a href="index.html">Accueil&emsp;</a>
+                        <a href="portfolio.html">Portfolio&emsp;</a>
+                        <a href="A propos - Mathias Photographie.html">À propos&emsp;</a>
+                        <!--Mise en pratique :l'ancre est plus bas que le lien d'ancrage-->
+                    </span>
+                </nav>
+            </header>   
+
+            <main>
+                <section class="introRobbie">
+
+                   <div>
+                        <h1>Mathias Jaume
+                        <br>Photographie</h1>
+                    
+                        <div class="intro-robbie">
+                            <p>
+                                <em>Phrase de présentation</em>
+                            </p>    
+                            <br><br>
+                            <a href="#ancre-projet"class="btn">UN PROJET ? CONTACTEZ-MOI !</a>
+
+                        </div>
+
+                    </div>
+
+                    <img src="images/Mathias Jaume 25.jpg" alt="Portrait_Mathias_Jaume">
+                
+                </section>
+
+                
+
+                <section class="Portfolio">
+                    <h2>Mon dernier projet</h2>
+                    <div class="conteneurPortraits">
+
+                            <div class="item1">
+                                <a href="images/fumeur.jpg" class="lien-voir-cette-image"> 
+                                    <img src="images/fumeur.jpg"alt="fumeur"title="Cliquez pour agrandir" />
+                                    <div class="voir-cette-image">Voir la photo</div>
+                                </a>
+                            </div>
+                            
+                            <!--Mise en pratique : insertion d'images présentes dans le même dossier + TEXTE BULLE + MINIATURE et aggrandisssement
+                            -->
+                            <div class="item2">
+                                <a href="images/portrait-femme1.png" class="lien-voir-cette-image">
+                                    <img src="images/portrait-femme1.png" alt="jsp"title="Cliquez pour agrandir"/>
+                                    <div class="voir-cette-image">Voir la photo</div>
+                                </a>
+                            </div>
+    
+                            <div class="item3">
+                                <a href="images/portrait-pleurs.png"class="lien-voir-cette-image">
+                                    <img src="images/portrait-pleurs.png"alt="jsp"title="Cliquez pour agrandir">
+                                    <div class="voir-cette-image">Voir la photo</div>
+                                </a>
+                            </div>
+    
+                            <div class="item4">
+                                <a href="images/fumeur2.png" class="lien-voir-cette-image">
+                                    <img src="images/fumeur2.png"alt="Geyser"title="Cliquez pour agrandir" />
+                                    <div class="voir-cette-image">Voir la photo</div>
+                                </a>
+                            </div>
+                        
+                            <div class="item5">
+                                <a href="images/guerrier-massai.png"class="lien-voir-cette-image"> 
+                                    <img src="images/guerrier-massai.png"alt="guerrier-massai"title="Cliquez pour agrandir" />
+                                    <div class="voir-cette-image">Voir la photo</div>
+                                </a>
+                            </div>
+    
+                            <div class="item6">
+                                <a href="https://wallpapers.com/images/hd/nba-youngboy-pictures-nala5e6zj64zjtpm.jpg" class="lien-voir-cette-image">
+                                    <img src="https://wallpapers.com/images/hd/nba-youngboy-pictures-nala5e6zj64zjtpm.jpg"alt="Lac"title="Cliquez pour agrandir" />
+                                    <div class="voir-cette-image">Voir la photo</div>
+                                </a>
+                            </div>
+                        
+                    </div>
+                    <br><br> <a href="Portfolio.html"target="_blank" class="btnPortfolio">Voir portfolio</a>
+
+                </section>
+                
+                <section id="ancre-projet" class="formContact">
+                    <h2>Parlons de votre projet</h2>
+
+                    <form action="" method="get" id="formContact">
+                        <div class="nomEtPrenom">
+
+                            <div>
+                            <label for="nom">Votre nom : </label>
+                            <input type="text" name="nom" id="nom" placeholder="Ex : Yakité" >
+                            </div>
+                            
+                            <div>
+                            <label for="adressemail">Votre email : </label>
+                            <input type="email" name="adressemail" id="adressemail"placeholder="Ex : adrien.yakite@gmail.com">
+                            </div>
+
+                        </div>
+                        
+                        <div>
+                        <label for="resumeprojet" id="votreMSG">Votre message</label>
+                            <textarea name="resumeprojet" id="resumeprojet" placeholder="Ex : Bonjour Robbie, voici un projet dont j'aimerai vous parler..." required rows="5"></textarea>
+                        </div>
+
+                        <input type="submit" value="Envoyer" class="btn" id="btnEnvoi">
+                    </form>
+                </section>
+
+                
+
+            </main>
+
+            <footer>
+                        <span class="logos-reseaux">
+                            <a href="https://twitter.com/MathiasJaume"target="_blank">
+                                <img src="images/iconTwitterW - Copie.png"alt="logo twitter"title="@MathiasJaume">
+                            </a>
+                            <a href="https://www.instagram.com/mathias_jaume/"target="_blank"> 
+                                <img src="images/iconInstagramW - Copie.png"alt="logo instagram"title="@MathiasJaume">             
+                            </a>
+                            <a href="https://www.linkedin.com/in/mathias-j-0808a5231/"target="_blank"> 
+                                <img src="images/iconLinkedinW - Copie.png"alt="logo Linkedin"title="@MathiasJaume">             
+                            </a>
+                        </span>
+            </footer>
+            
+        </body>
+           
+    
+
+
+
+    </html>      

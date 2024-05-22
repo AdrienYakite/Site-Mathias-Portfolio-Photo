@@ -1,0 +1,433 @@
+
+/*////////////////////////////////////////////////////////////////*/
+
+                            /*BALISES*/
+
+/*////////////////////////////////////////////////////////////////*/
+body{
+    background-color: black;
+    color: white;
+    margin: 0;
+    font-family: "Oswald", sans-serif;
+
+}
+
+
+nav,footer{
+    background-color: black;
+    color: white;
+    padding: 30px;
+    display: flex;
+    flex: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img{
+    border-radius: 30px;
+}
+
+
+footer{
+    margin: auto;
+    width: 100px;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+a:hover{
+    opacity: 0.6;
+}
+
+a:visited{
+    text-decoration: none;
+}
+
+
+header a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+h1{
+    font-size: 3.5em;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+}
+
+h2{
+    font-size: 2.5em;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    color: white;
+}
+
+
+
+p{
+    font-size: 1.1em;
+    text-align: justify
+}
+
+form{
+  margin: 150px;
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:20px; 
+
+
+}
+
+
+td,th,tr{
+    border: 1px solid #8e86b5;
+    padding: 50px;
+}
+
+table{
+    border-collapse: collapse;
+    margin: auto;
+}
+
+
+span{
+    color: #8e86b5;
+}
+
+
+/*////////////////////////////////////////////////////////////////*/
+
+                            /*CLASSES ET ID*/
+
+/*////////////////////////////////////////////////////////////////*/
+
+/* index.html*/ 
+
+.classeTemporaireForm{
+    padding: 200px;
+    text-align: center;
+    font-size: 2em;
+
+}
+.Portfolio{
+    background-color: black;
+    color: black;
+    padding: 20px;
+}
+
+.Portfolio a{
+    color: black;
+}
+
+
+/*.voir-cette-image{
+    /*position: absolute;
+    top: 0px;
+    bottom : 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    border: red 3px solid;
+    font-size: 1.5em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+
+/*.Portfolio a:hover .voir-cette-image{
+    display: flex;
+}*/
+
+.introRobbie{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 75px;
+    
+    width: auto;
+    margin: auto;
+}
+
+.introRobbie h1{
+    font-size: 3.5em;
+    text-align: left;
+}
+
+.introRobbie img {
+    border-radius: 30px;
+}
+
+.coordonees{
+    display: flex;
+    flex: row;
+    gap: 50px;
+
+}
+
+#resumeprojet{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 800px;
+}
+
+.conteneurPortraits a{
+    position: relative;
+}
+
+.conteneurPortraits{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+    margin-right: 50px;
+    margin-left: 50px;
+
+
+}
+
+.conteneurPortraits img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn, .carte-de-visite a{   
+    width:40% ;
+    height:20%;
+    position: relative;
+    animation: illustration2 2s ease-in-out infinite;
+}
+
+@keyframes illustration2 {
+    0% {
+      top: 0;
+    }
+    50% {
+        top: 20px;
+    }
+    100% {
+      top: 0;
+    }
+  }
+  
+
+
+
+/*Porfolio*/
+
+.grid-paysages{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+
+.grid-portraits{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+
+.grid-paysages img, .grid-portraits img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+/*a propos*/
+
+.introAPropos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+.introAPropos p {
+    padding: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-left: 1px solid #8e86b5;
+    font-size: 1.1em;
+}
+
+.services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+.services ul{
+    padding: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-left: 1px solid #8e86b5;
+    font-size: 1.1em;
+}
+
+
+.carte-de-visite{
+margin: auto;
+padding-top: 100px;
+}
+
+.carte-de-visite img{
+    width: 25%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.soldes{
+    text-decoration:line-through;
+}
+
+.btn{
+    border-radius: 30px;
+    border: none;
+    background-color: white ;
+    color: black;
+    padding: 15px;
+    font-weight:800;
+}
+
+.btnPortfolio{
+    display: flex;
+    justify-content: center;
+    padding-bottom:30px ;
+    text-decoration: underline;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*    <form method="get" action="">
+                        <label for="langue">Veuillez selectionnez une langue :</label>
+                        <select name="langue" id="langue">
+                            <option value="Français" selected>Français 🇫🇷</option>
+                            <option value="Anglais" selected>Anglais 🇬🇧​</option>
+                            <option value="Allemand" selected>Allemand 🇩🇪​ </option>
+                            <option value="Espagnol" selected>Espagnol 🇪🇸</option>
+                            <option value="Japonais" selected>Japonais 🇯🇵​</option>
+                        </select>
+                    </form>
+
+                    <br><br>
+
+                    <form method="get" action="">
+                    <label>Veuillez selectionnez une langue :</label><br>
+                    <label for="français">Français</label><input type="checkbox" name="français" id="français">
+                    <label for="anglais">Anglais</label><input type="checkbox" name="anglais" id="anglais">
+                    <label for="espagnol">Espagnol</label><input type="checkbox" name="espagnol" id="espagnol">
+                    <label for="allemand">Allemand</label><input type="checkbox" name="allemand" id="allemand">
+                    </form>
+
+                    <br><br>
+
+                    <form method="get" action="">
+
+                        <label for="langue">Veuillez choisir une langue :</label><br>
+
+
+                        <label for="français">Français</label>
+                            <input type="radio" name="langue" value="français" id="français" checked>
+
+                        <label for="anglais">Anglais</label>
+                            <input type="radio" name="langue" value="anglais" id="anglais" checked>
+
+                        <label for="espagnol">Espagnol</label>
+                            <input type="radio" name="langue" value="espagnol" id="espagnol" checked>
+
+                        <label for="allemand">Allemand</label>
+                            <input type="radio" name="langue" value="allemand" id="allemand" checked>
+
+                    </form>*/
