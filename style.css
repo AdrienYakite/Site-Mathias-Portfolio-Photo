@@ -267,8 +267,10 @@ form textarea::placeholder{
 
 .grid-paysages{
     display: grid;
+
     grid-template-columns:repeat(3,1fr);
     grid-template-rows: repeat(2, 1fr);
+    
     gap: 15px;
     margin-right: 50px;
     margin-left: 50px;
