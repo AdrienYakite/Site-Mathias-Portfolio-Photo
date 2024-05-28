@@ -1,0 +1,246 @@
+/*////////////////////////////////////////////////////////////////*/
+
+                            /*POLICES*/
+
+/*////////////////////////////////////////////////////////////////*/
+
+@font-face {
+    font-family: 'Agraham';
+    src: url('fonts/agraham/Agraham.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*////////////////////////////////////////////////////////////////*/
+
+                            /*BALISES*/
+
+/*////////////////////////////////////////////////////////////////*/
+body{
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+    font-family: "Oswald", sans-serif;
+
+}
+
+main section{
+    background-color: pink;
+    padding-bottom: 100px;
+}
+
+nav,footer{
+    background-color: black;
+    color: white;
+    padding: 30px;
+    display: flex;
+    flex: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img{
+    border-radius: 30px;
+}
+
+header .navigation a{
+    border-bottom: 1px solid pink;
+}
+
+
+footer{
+    margin: auto;
+    width: 100px;
+}
+
+footer a:hover{
+    opacity: 0.8 ;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+a:hover{
+    opacity: 0.9;
+    color: pink;
+}
+
+a:visited{
+    text-decoration: none;
+}
+
+
+header a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.25em;
+    
+    display: inline; 
+    padding: 0;      
+    margin-bottom: 0;       
+    line-height: 1;
+}
+
+h1{
+    font-size: 3.5em;
+    text-align: center;
+    font-family: "Agraham", sans-serif
+}
+
+
+h2{
+    font-size: 2.5em;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    color: white;
+}
+
+
+
+p{
+    font-size: 1.1em;
+    text-align: justify
+}
+
+
+td,th,tr{
+    border: 1px solid #8e86b5;
+    padding: 50px;
+}
+
+table{
+    border-collapse: collapse;
+    margin: auto;
+}
+
+
+span{
+    color: #8e86b5;
+}
+
+#ancre-projet{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+
+    padding: 100px;
+    gap: 100px;
+
+}
+
+
+
+#ancre-projet h2{
+    text-align: left;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+form input{
+    height: 50px;
+}
+
+form textarea{
+    height: 150px;
+}
+
+form textarea::placeholder{
+    text-align: left;
+}
+
+
+
+/*////////////////////////////////////////////////////////////////*/
+
+                            /*CLASSES ET IDs*/
+
+/*////////////////////////////////////////////////////////////////*/
+
+.navigation:hover{
+    animation: selection1 0.75s ease-in;
+    position:relative;
+    opacity: 1;
+
+  }
+
+
+@keyframes selection1{
+    0% {
+        right: 0px;
+    }
+    25%{
+        right: 5px;
+    }
+    50% {
+        right: 10px;
+    }
+    75%{
+        right: 5px;
+    }
+    100% {
+        right: 0px;
+    }
+  }
+
+
+.grid-paysages{
+    display: grid;
+
+    grid-template-columns:repeat(1,1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    margin-right: 50px;
+    margin-left: 50px;
+    gap: 50px;
+}
+
+
+.grid-paysages .gauche img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0px; 
+    border: 3px white solid;
+}
+
+.grid-paysages .droite img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0px; 
+    border: 3px white solid;
+}
+
+
+.grid-paysages .grandes{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: none;
+}
+
+.grid-paysages .gauche{
+    margin-right: 604px;
+       
+}
+
+.grid-paysages .droite{
+    margin-left: 604px;
+}
+
+.grid-paysages p{
+    color: white;
+}

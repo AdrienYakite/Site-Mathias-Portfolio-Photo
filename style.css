@@ -40,10 +40,18 @@ header img{
     border-radius: 30px;
 }
 
+header .navigation a{
+    border-bottom: 1px solid pink;
+}
+
 
 footer{
     margin: auto;
     width: 100px;
+}
+
+footer a:hover{
+    opacity: 0.8 ;
 }
 
 
@@ -54,7 +62,8 @@ a{
 
 
 a:hover{
-    opacity: 0.6;
+    opacity: 0.8;
+    color: pink;
 }
 
 a:visited{
@@ -96,7 +105,7 @@ p{
 
 
 td,th,tr{
-    border: 1px solid #8e86b5;
+    border: 1px solid pink;
     padding: 50px;
 }
 
@@ -107,7 +116,7 @@ table{
 
 
 span{
-    color: #8e86b5;
+    color:pink;
 }
 
 #ancre-projet{
@@ -167,9 +176,18 @@ form textarea::placeholder{
 }
 
 .PortfolioAccueil{
-    background-color: black;
+    background-color: pink;
     color: black;
     padding: 20px;
+    margin-bottom: 200px;
+
+}
+
+.PortfolioAccueil h2{
+    color: black;
+}
+.PortfolioAccueil a{
+    color: black;
 }
 
 .PortfolioAccueil .btn2{
@@ -305,73 +323,21 @@ form textarea::placeholder{
 
   @keyframes selection1{
     0% {
-      right: 1.5px;
+        right: 0px;
+    }
+    25%{
+        right: 5px;
     }
     50% {
         right: 10px;
     }
+    75%{
+        right: 5px;
+    }
     100% {
-      right: 0px;
+        right: 0px;
     }
   }
-  
-
-
-
-/*Porfolio*/
-
-.grid-paysages{
-    display: grid;
-
-    grid-template-columns:repeat(1,1fr);
-    grid-template-rows: repeat(2, 1fr);
-
-    margin-right: 50px;
-    margin-left: 50px;
-    gap: 50px;
-}
-
-
-.grid-paysages .gauche img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 500px; 
-    border: 3px white solid;
-}
-
-.grid-paysages .droite img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 500px; 
-    border: 3px white solid;
-}
-
-
-.grid-paysages .grandes{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border: none;
-}
-
-.grid-paysages .gauche{
-    margin-right: 604px;
-       
-}
-
-.grid-paysages .droite{
-    margin-left: 604px;
-}
-
-.grid-paysages p{
-    color: white;
-}
-
-
-
-
 
 
 
