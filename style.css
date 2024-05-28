@@ -65,8 +65,12 @@ a:visited{
 header a{
     color: white;
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1.25em;
     
+    display: inline; 
+    padding: 0;      
+    margin-bottom: 0;       
+    line-height: 1;
 }
 
 h1{
@@ -162,9 +166,36 @@ form textarea::placeholder{
     padding: 20px;
 }
 
-.Portfolio a{
+.PortfolioAccueil{
+    background-color: black;
     color: black;
+    padding: 20px;
 }
+
+.PortfolioAccueil .btn2{
+    display: flex;
+    justify-content: center;
+    margin-left: 600px;
+    margin-right: 600px;
+
+    position: relative;
+    animation: illustration1 2s ease-in-out infinite;
+
+    text-decoration: underline;    
+}
+
+@keyframes illustration1{
+    0% {
+      left: 0;
+    }
+    50% {
+        left: 10px;
+    }
+    100% {
+      left: 0;
+    }
+  }
+  
 
 
 /*.voir-cette-image{
@@ -248,6 +279,8 @@ form textarea::placeholder{
     animation: illustration2 2s ease-in-out infinite;
 }
 
+
+
 @keyframes illustration2 {
     0% {
       top: 0;
@@ -259,6 +292,28 @@ form textarea::placeholder{
       top: 0;
     }
   }
+
+
+  .navigation:hover{
+    animation: selection1 0.75s ease-in;
+    position:relative;
+    opacity: 1;
+
+  }
+
+
+
+  @keyframes selection1{
+    0% {
+      right: 1.5px;
+    }
+    50% {
+        right: 10px;
+    }
+    100% {
+      right: 0px;
+    }
+  }
   
 
 
@@ -268,29 +323,50 @@ form textarea::placeholder{
 .grid-paysages{
     display: grid;
 
-    grid-template-columns:repeat(3,1fr);
+    grid-template-columns:repeat(1,1fr);
     grid-template-rows: repeat(2, 1fr);
-    
-    gap: 15px;
+
     margin-right: 50px;
     margin-left: 50px;
+    gap: 50px;
 }
 
 
-.grid-portraits{
-    display: grid;
-    grid-template-columns:repeat(3,1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 15px;
-    margin-right: 50px;
-    margin-left: 50px;
-}
-
-
-.grid-paysages img, .grid-portraits img{
+.grid-paysages .gauche img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 500px; 
+    border: 3px white solid;
+}
+
+.grid-paysages .droite img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 500px; 
+    border: 3px white solid;
+}
+
+
+.grid-paysages .grandes{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: none;
+}
+
+.grid-paysages .gauche{
+    margin-right: 604px;
+       
+}
+
+.grid-paysages .droite{
+    margin-left: 604px;
+}
+
+.grid-paysages p{
+    color: white;
 }
 
 
