@@ -176,18 +176,18 @@ form textarea::placeholder{
 }
 
 .PortfolioAccueil{
-    background-color: pink;
-    color: black;
+    background-color: black;
+    color: white;
     padding: 20px;
     margin-bottom: 200px;
 
 }
 
 .PortfolioAccueil h2{
-    color: black;
+    color: white;
 }
 .PortfolioAccueil a{
-    color: black;
+    color: white;
 }
 
 .PortfolioAccueil .btn2{
@@ -249,6 +249,12 @@ form textarea::placeholder{
 .introNightAp a{
     width: 210px;
     margin: auto;
+    background-color: pink;
+
+}
+
+.introNightAp a:hover{
+    color: black;
 }
 
 
